@@ -1,99 +1,48 @@
-
-
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
+<head><meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>personal website</title>
-	<style type="text/css">
-	em {
-		font-weight: bold;
-		color: black;
-	}
+	<title>first page </title>
 
-	body{
-		background-color:linen ;
-		font-family: arial,helvetica,sans-serif;
-	}
-
-	h1 {
-		color: maroon;
-		margin-left: 40px;
-		font-family:tahoma, helvetica, sans-serif ;
-	}
-	li em{
-		text-decoration: underline;
-	}
-	p{
-		font-size:12pt;
-		font-family: arial, sans-serif;
-	}
-	li, em{
-		text-decoration: underline;
-	}
-
-	.special{
-		color: purple;
-	}
-	span{
-		color: darkred;
-		border: 1px solid black;
-	}
-	.extra span{
-		color: inherit;
-	}
-	#myHeader{
-		background-color: lightblue;
-		padding: 40px;
-		text-align: center;
-	}
-	.topic{
-		background-color: tomato;
-		color:white;
-		padding: 5px;
-
-	}
-
-</style>
 </head>
 <body>
-	
-	<table border ="1" style = "width: 90%;"
+
+	<h1>New HTML5 Input Types Demo</h1>
+	<p>this form demonstrates the new HTML5 input types and the placeholder,required and autofocus attributes.</p>
+	<label>color:
+		<input type="color" autofocus />
+		(Hexadecimal code such as #ADD8E6)
+		<br><br>
+	</label>
+	<form action="/action_page.php">
 		
-			<thead>
-				<tr>
-					<th colspan="3"> <h1 id="myHeader">Profile</h1>
-					</th>
-				</tr>
-			
-			</thead>
+		<label for="birthday">Date:</label>
+		<input type="date" id="birthday" name="birthday" value=" " > (yyyy-mm-dd)
 
-			<tbody>
-				<tr>
-					<td rowspan="3">	
-						<br><br>
-						<img src ="./pic/me.jpg" width="250" height="300" 
-						alt="image does not find...." /><br>
-						personal photo<br><br>
-					</td><
-					<td colspan="2">
-						
-						 <li>Name: Winnie Huang</li>
-					 	<br>
-					 	<li>Gender: female </li>
-					 	<br>
-					 	<li>birth day: 2001/12/06 </li>
-					</td>
-				</tr>
-			</tbody>
+		<input type="submit" value="Submit">
+		<br><br>
+		<label>Email:</label>
+		<input type="email" name="email" placeholder="name@gmail.com" required>
+		(name@domain.com)<br><br>
+		<label for="number">Number:</label>
+		<input type="number" name="number" min="0" max="7" value="4">(Enter a number between 0 and 7)
+		<br><br>
+		<label for="range">Range:</label>
+		0<input type="range" id="range" min="0" max="20">20
+		<br><br>
+		<label for="Search">Search:</label>
+		<input type="Search" id="search"name="Search" placeholder="search query">
+		<br><br>
+		<label for="appt">Time:</label>
+		<input type="time" id="appet" name="appt">(hh:mm)
+		<br><br>
+		<input type="submit" value="Submit">
 
-	</table>
-	<h2 class="topic">Introduction</h2>
-	<p>Hi I am Winnie. I am studying in Chenchi University and major in MIS.
-	I love playing piano and guitar. Wanna know more about me? follow my social media accounts. </p>
+	</form>
 
-	
+
 
 </body>
+
+
 </html>
