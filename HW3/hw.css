@@ -1,0 +1,63 @@
+div {
+
+		margin-left: auto;
+    	margin-right: auto;
+    	padding-top: .5em;
+    	padding-right: .5em;
+    	padding-left:.5em ;
+    	padding-bottom: .5em;
+    	text-align: left;
+    	
+
+
+	}
+.floated{
+	
+
+	font-size: 1em;
+	font-family: arial, sans-serif;
+	
+	float:left;
+	
+
+
+}
+
+div input{
+	
+	margin-left: .3em;
+	height: 30%;
+	width:70% ;
+}
+div textarea{
+
+	height: 100%;
+	border-width:100% ;
+
+
+}
+
+
+
+img{
+	width: 80%;
+	height: 50%;
+
+	
+}
+h1{
+	color: red;
+	text-align: right;
+}
+@media print{
+	body{
+		background-color:green;
+
+	}
+	h1{
+		font-size: 12pt;
+		color:white;
+
+	}
+}
+
