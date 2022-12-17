@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<p>before the script...</p>
+	<script type="text/javascript">
+
+
+		var x;
+		var y;
+		x = window.prompt("Please enter first integer");
+	    y = window.prompt("Please enter second integer");
+
+	    if(x>y){
+	    	document.body.style.backgroundColor='lightblue';
+	    	document.write(x+" > "+ y);
+	    }
+	    else if(y>x){
+	    	document.body.style.backgroundColor='lightgreen';
+	    	document.write(x+" < "+ y);
+	    }
+	    else{
+	    	document.body.style.backgroundColor='lightyellow';
+	    	document.write(x+" == "+ y);
+
+	    }
+		</script>
+	    
+		<input type="button" value="1st button" onClick="document.write(x)">
+	    <input type="button" value="2nd button" onclick="document.write(y)">
+		
+	
+
+
+	    
+
+
+   
+
+</body>
+
+</html>
